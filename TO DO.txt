@@ -1,0 +1,7 @@
+plans for future and to do list:
+
+- clean up the code to make it more readable and make it use the functions as a library to make main clearer
+
+-clean up the graphcial user interface to make it less cringe
+
+-future plans to put into EDMC but still completly lost in how to do it
