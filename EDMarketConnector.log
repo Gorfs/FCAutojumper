@@ -1,0 +1,91 @@
+usage: EDMarketConnector [-h] [--trace]
+EDMarketConnector: error: unrecognized arguments: -m pip install pydirectinput
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          2021-03-02 14:15:05.668 - ERROR - plug.Plugin.__init__:113: : Failed for Plugin "FCjumper"
+Traceback (most recent call last):
+  File "plug.pyc", line 102, in __init__
+  File "<frozen importlib._bootstrap_external>", line 407, in _check_name_wrapper
+  File "<frozen importlib._bootstrap_external>", line 907, in load_module
+  File "<frozen importlib._bootstrap_external>", line 732, in load_module
+  File "<frozen importlib._bootstrap>", line 265, in _load_module_shim
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\archi\AppData\Local\EDMarketConnector\plugins\FCjumper\load.py", line 2, in <module>
+    from GUI import make_GUI
+  File "C:\Users\archi\AppData\Local\EDMarketConnector\plugins\FCjumper\GUI.py", line 2, in <module>
+    from Macro import jumper
+  File "C:\Users\archi\AppData\Local\EDMarketConnector\plugins\FCjumper\Macro.py", line 8, in <module>
+    install("pydirectinput")
+  File "C:\Users\archi\AppData\Local\EDMarketConnector\plugins\FCjumper\Macro.py", line 6, in install
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+  File "subprocess.pyc", line 363, in check_call
+subprocess.CalledProcessError: Command '['C:\\Program Files (x86)\\EDMarketConnector\\EDMarketConnector.exe', '-m', 'pip', 'install', 'pydirectinput']' returned non-zero exit status 2.
+2021-03-02 14:15:05.670 - ERROR - plug.load_plugins:210: Failure loading found Plugin "FCjumper"
+Traceback (most recent call last):
+  File "plug.pyc", line 208, in load_plugins
+  File "plug.pyc", line 102, in __init__
+  File "<frozen importlib._bootstrap_external>", line 407, in _check_name_wrapper
+  File "<frozen importlib._bootstrap_external>", line 907, in load_module
+  File "<frozen importlib._bootstrap_external>", line 732, in load_module
+  File "<frozen importlib._bootstrap>", line 265, in _load_module_shim
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\archi\AppData\Local\EDMarketConnector\plugins\FCjumper\load.py", line 2, in <module>
+    from GUI import make_GUI
+  File "C:\Users\archi\AppData\Local\EDMarketConnector\plugins\FCjumper\GUI.py", line 2, in <module>
+    from Macro import jumper
+  File "C:\Users\archi\AppData\Local\EDMarketConnector\plugins\FCjumper\Macro.py", line 8, in <module>
+    install("pydirectinput")
+  File "C:\Users\archi\AppData\Local\EDMarketConnector\plugins\FCjumper\Macro.py", line 6, in install
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+  File "subprocess.pyc", line 363, in check_call
+subprocess.CalledProcessError: Command '['C:\\Program Files (x86)\\EDMarketConnector\\EDMarketConnector.exe', '-m', 'pip', 'install', 'pydirectinput']' returned non-zero exit status 2.
+2021-03-02 14:15:05.671 - INFO - plug.Plugin.__init__:98: loading plugin "jegin" from "C:\Users\archi\AppData\Local\EDMarketConnector\plugins\jegin\load.py"
+2021-03-02 14:15:05.673 - INFO - plug.Plugin.__init__:98: loading plugin "LandingPad" from "C:\Users\archi\AppData\Local\EDMarketConnector\plugins\LandingPad\load.py"
+2021-03-02 14:15:05.684 - INFO - <plugins>.EDR.edrlog.EDRLog.log:32: No user defined layout at config/user_igm_alt_config.v3.ini, using config/user_igm_alt_config.v2.ini instead.
+2021-03-02 14:15:05.686 - INFO - <plugins>.EDR.edrlog.EDRLog.log:32: No user defined layout at config/user_igm_alt_config.v3.ini or config/user_igm_alt_config.v2.ini, using config/igm_alt_config.v3.ini instead.
+2021-03-02 14:15:05.687 - INFO - <plugins>.EDR.edrlog.EDRLog.log:32: No user defined layout at config/user_igm_alt_themed_config.v3.ini, using config/user_igm_alt_themed_config.v2.ini instead.
+2021-03-02 14:15:05.689 - INFO - <plugins>.EDR.edrlog.EDRLog.log:32: No user defined layout at config/user_igm_alt_themed_config.v3.ini or config/user_igm_alt_themed_config.v2.ini, using config/igm_alt_themed_config.v3.ini instead.
+2021-03-02 14:15:05.690 - INFO - <plugins>.EDR.edrlog.EDRLog.log:32: No user defined layout at config/user_igm_alt_config.v3.ini, using config/user_igm_alt_config.v2.ini instead.
+2021-03-02 14:15:05.691 - INFO - <plugins>.EDR.edrlog.EDRLog.log:32: No user defined layout at config/user_igm_alt_config.v3.ini or config/user_igm_alt_config.v2.ini, using config/igm_alt_config.v3.ini instead.
+2021-03-02 14:15:05.693 - INFO - <plugins>.EDR.edrlog.EDRLog.log:32: No user defined layout at config/user_igm_alt_themed_config.v3.ini, using config/user_igm_alt_themed_config.v2.ini instead.
+2021-03-02 14:15:05.694 - INFO - <plugins>.EDR.edrlog.EDRLog.log:32: No user defined layout at config/user_igm_alt_themed_config.v3.ini or config/user_igm_alt_themed_config.v2.ini, using config/igm_alt_themed_config.v3.ini instead.
+2021-03-02 14:15:06.608 - DEBUG - <plugins>.EDR.edrlog.EDRLog.log:32: Checking response: service=EDR, call=Version, status=200
+2021-03-02 14:15:06.651 - INFO - monitor.EDLogs.start:178: Monitoring Journal Folder: "C:\Users\archi\Saved Games\Frontier Developments\Elite Dangerous"
+2021-03-02 14:15:06.652 - INFO - monitor.EDLogs.start:179: Start Journal File: "C:\Users\archi\Saved Games\Frontier Developments\Elite Dangerous\Journal.210301224305.01.log"
+2021-03-02 14:15:06.653 - DEBUG - monitor.EDLogs.start:182: Starting Journal worker
+2021-03-02 14:15:06.654 - DEBUG - monitor.EDLogs.worker:235: Starting on logfile "C:\Users\archi\Saved Games\Frontier Developments\Elite Dangerous\Journal.210301224305.01.log"
+2021-03-02 14:15:07.659 - DEBUG - companion.Session.login:412: changed account or retrying login during auth
+2021-03-02 14:15:07.660 - DEBUG - companion.Auth.refresh:231: Trying for "gorfgorf23"
+2021-03-02 14:15:07.660 - DEBUG - companion.Auth.refresh:235: Cmdrs: ['gorfgorf23']
+2021-03-02 14:15:07.661 - DEBUG - companion.Auth.refresh:238: idx = 0
+2021-03-02 14:15:07.662 - DEBUG - companion.Auth.refresh:243: We have a refresh token for that idx
+2021-03-02 14:15:07.663 - DEBUG - companion.Auth.refresh:250: Attempting refresh with Frontier...
+2021-03-02 14:15:07.911 - DEBUG - companion.Session.login:422: We have an access_token
+2021-03-02 14:15:07.912 - DEBUG - companion.Session.start:455: Starting session
+2021-03-02 14:15:13.753 - INFO - EDMarketConnector.AppWindow.onexit:1072: Starting shutdown procedures...
+2021-03-02 14:15:13.754 - INFO - EDMarketConnector.AppWindow.onexit:1075: Closing update checker...
+2021-03-02 14:15:13.754 - INFO - EDMarketConnector.AppWindow.onexit:1081: Notifying plugins to stop...
+2021-03-02 14:15:13.755 - INFO - plug.notify_stop:254: Asking plugin "EDDN" to stop...
+2021-03-02 14:15:13.756 - INFO - plug.notify_stop:254: Asking plugin "EDSM" to stop...
+2021-03-02 14:15:14.387 - INFO - plug.notify_stop:254: Asking plugin "Inara" to stop...
+2021-03-02 14:15:14.388 - INFO - plug.notify_stop:254: Asking plugin "EDR" to stop...
+2021-03-02 14:15:14.389 - INFO - <plugins>.EDR.edrlog.EDRLog.log:32: Stopping the plugin...
+2021-03-02 14:15:14.453 - INFO - <plugins>.EDR.edrlog.EDRLog.log:32: Plugin stopped
+2021-03-02 14:15:14.454 - INFO - plug.notify_stop:254: Asking plugin "jegin" to stop...
+2021-03-02 14:15:14.455 - INFO - plug.notify_stop:260: Done
+2021-03-02 14:15:14.456 - INFO - EDMarketConnector.AppWindow.onexit:1086: Unregistering hotkey manager...
+2021-03-02 14:15:14.457 - INFO - EDMarketConnector.AppWindow.onexit:1090: Closing dashboard...
+2021-03-02 14:15:14.458 - DEBUG - dashboard.Dashboard.stop:80: Stopping monitoring Dashboard
+2021-03-02 14:15:14.459 - INFO - EDMarketConnector.AppWindow.onexit:1093: Closing journal monitor...
+2021-03-02 14:15:14.460 - DEBUG - monitor.EDLogs.stop:190: Stopping monitoring Journal
+2021-03-02 14:15:14.658 - INFO - EDMarketConnector.AppWindow.onexit:1097: Closing protocol handler...
+2021-03-02 14:15:14.659 - INFO - EDMarketConnector.AppWindow.onexit:1100: Closing Frontier CAPI sessions...
+2021-03-02 14:15:14.659 - INFO - EDMarketConnector.AppWindow.onexit:1104: Closing config...
+2021-03-02 14:15:14.660 - INFO - EDMarketConnector.AppWindow.onexit:1107: Destroying app window...
+2021-03-02 14:15:14.714 - INFO - EDMarketConnector.AppWindow.onexit:1110: Done.
+2021-03-02 14:15:14.715 - INFO - monitor.EDLogs.worker:349: We're not meant to be running, exiting...
+2021-03-02 14:15:14.716 - INFO - EDMarketConnector.__main__:1385: Exiting
