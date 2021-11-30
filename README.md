@@ -28,3 +28,8 @@ Since this is basically a bot I am NOT responsible for anyone banned for botting
 credits: I will be posting the people behind the creation of this script when it will not lead to us getting banned if Fdev finds us :)
 
  i will add contact info later on when i figure it out
+ 
+ edit 2) electric boogaloo, 
+ A friend of mine wants me to start coding this boi again so here I am, In the main branch I put A new file called console jumper, It;s a jumper but with no gui. seems a bit better, 
+ 
+ Also Found someone else making basically the same thing at https://github.com/jpunwin/FleetCarrierNavComputer Check it out if you want something that looks much cleaner but missing the refuel option.
