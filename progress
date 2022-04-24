@@ -1,6 +1,0 @@
-The FC auto jumper now, at least shows up in EDMC, I have made the load file public for anyone wanting to try it out.( only use if you know what you are doing),
-The FC auto jumper main project has now reached the size of 1000 lines of code and is now being optimized. Expect release in the next couple of days.
-It now feature a much needed tritium placement changer that now means it can be used by any FC in the galaxy. 
-This will be version 2.0 in the beta stage of develpment. After the release of the application variant. I will focus on the edmc part of the plugin.
-This all for now. 
-o7
