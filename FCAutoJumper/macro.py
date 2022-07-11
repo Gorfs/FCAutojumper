@@ -1,7 +1,7 @@
 # this file contains 2 macros for jumping the Fleet carrier in elite dangerous
 
 import pyautogui
-import pydirectinput
+#import pydirectinput
 import time
 
 

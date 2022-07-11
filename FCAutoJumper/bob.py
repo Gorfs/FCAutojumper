@@ -30,7 +30,7 @@ class Jumper:
                 print("hmm ,all seems to be good CMDR.")
         except:
             print("ERROR, CMDR I can't open that file for some reason, shutting down")
-            if input("Type A if you want to restart, Press Enter to restart") == "A":
+            if input("Type A if you want to restart, press ENTER to shut down") == "A":
                 self.first_menu()
             else:
                 exit()
@@ -38,7 +38,9 @@ class Jumper:
         print("Now that I have the route.csv file I need to know if you wish for me to refuel your FC on the way")
         print("This does require a ship with at least a 75 ton capacity \n")
         print('If you with to enable this please type \"True\" under, if not please type \'False\' CAPITALS INCLUDED')
-        self.refuel_bol = bool(input(""))
+        inn = input("")
+        if inn == "True":
+            self.refuel_bol = True
 
         if self.refuel_bol == True:
             print("You have selected the refuel capability")
@@ -50,6 +52,7 @@ class Jumper:
 
         print("\n It seems we have configured everything CMDR. I will start to jump on your command")
         input("Press Enter to start the jump (any button will do really)")
+        self.jump()
 
     def jump(self):
         with open(self.file, "r") as file:
