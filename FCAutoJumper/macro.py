@@ -26,7 +26,7 @@ def one_jump(system: str) -> None:
     pydirectinput.keyDown('space')
     time.sleep(0.025)
     pydirectinput.keyUp('space')
-    time.sleep(1)
+    time.sleep(10)
 
     # selects the nav panel in FC thing
     pydirectinput.press('s')
@@ -42,7 +42,7 @@ def one_jump(system: str) -> None:
 
     # going to nav part of gal map
     # selecting with search bar
-    pydirectinput.press("e")
+    pydirectinput.press("up")
     time.sleep(1)
     pydirectinput.moveTo(175, 250)  # going to selctor of great maginificance
     pydirectinput.press('space')
@@ -57,12 +57,14 @@ def one_jump(system: str) -> None:
     # pressing GO BUTTON
     pydirectinput.press("d")
     pydirectinput.press("a")
-    pydirectinput.press("space")
+    pydirectinput.keyDown("space")
+    time.sleep(3)
+    pydirectinput.keyUp("space")
     time.sleep(1)
     print('jump plotted succesfully')
 
     # backing out
-    time.sleep(2)
+    time.sleep(10)
     pydirectinput.press('backspace')
     time.sleep(2)
     pydirectinput.press('backspace')
@@ -75,7 +77,7 @@ def refuel(amount: int, tritium_placement: int) -> None:
     output -> terminal text and keyboard strokes
     desc -> uses keyboard inputs to simulate taking
     '''
-    # go into right panel
+    # go into right panelw
     pydirectinput.press("4")
     time.sleep(1)
 
@@ -107,7 +109,8 @@ def refuel(amount: int, tritium_placement: int) -> None:
     # transfer tritium to cargo hold
 
     print("transferring tritium used by last jump")
-    for k in range(amount):
+    print("transfering: " + str(amount))
+    for k in range(amount):        
         time.sleep(0.025)
         pydirectinput.press("a")
     # accept transfer
@@ -117,6 +120,7 @@ def refuel(amount: int, tritium_placement: int) -> None:
     pydirectinput.press("s")
     pydirectinput.press("d")
     pydirectinput.press("space")
+    time.sleep(2)
 
     # backout of inventory
     print("backing out of inventory")
@@ -130,29 +134,11 @@ def refuel(amount: int, tritium_placement: int) -> None:
 
     print("resseting FC panel for future jumps")
     time.sleep(2)
-    pydirectinput.press("w")
+    pydirectinput.press("d")
     time.sleep(0.025)
-    pydirectinput.press("w")
-    time.sleep(0.025)
-    pydirectinput.press("w")
-    time.sleep(0.025)
-    pydirectinput.press("w")
-    time.sleep(0.025)
-    pydirectinput.press("w")
-    time.sleep(0.025)
-    pydirectinput.press("w")
-    time.sleep(1)
-    pydirectinput.press("a")
-    time.sleep(0.025)
-    pydirectinput.press("a")
-    time.sleep(0.025)
-    pydirectinput.press("a")
-    time.sleep(0.025)
-    pydirectinput.press("a")
-    time.sleep(1)
     pydirectinput.press("s")
     time.sleep(0.025)
-    pydirectinput.press("d")
+    pydirectinput.press("a")
     time.sleep(1)
 
     # backout
@@ -161,10 +147,8 @@ def refuel(amount: int, tritium_placement: int) -> None:
 
     # got to carrier managment
     print("going to carrier management")
-    pydirectinput.press("s")
-    pydirectinput.press("s")
-    pydirectinput.press("w")
     pydirectinput.press("space")
+    time.sleep(5) 
     # going to tritium depot and selecting
     print("going to tritium depot and selecting")
     pydirectinput.press("s")
@@ -174,13 +158,11 @@ def refuel(amount: int, tritium_placement: int) -> None:
     pydirectinput.press("w")
     # dropping off tritium used in depot
     print("dropping off tritium in tritium depot")
-    for tritium in range(amount):
-        pydirectinput.press("d")
-        # confirm drop off
-        print("confirming drop-off")
+    # max amount of tritium is already preselected
     pydirectinput.press("space")
     # full backout
     print("fully backing out")
     pydirectinput.press("backspace")
     pydirectinput.press("backspace")
     pydirectinput.press("backspace")
+    time.sleep(2)
