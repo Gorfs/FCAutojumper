@@ -27,7 +27,7 @@ Bob is based in Python 3.9 and uses "pyautogui" and "pydirectinput".
 To use bob you will need to install python and these packages.
 There is a .exe file included but it is very unstable and is more than likely to break.
 
-Bob must be used in elite dangerous Horizons, since the macros are made for those menus,
+Bob must be used in elite dangerous 4.0 (Horizons or Odyssey) and in a ship in hangar, since the macros are made for those menus,
 
 You must have the default keybinds for keyboard and mouse for bob to access them.
 

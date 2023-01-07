@@ -52,23 +52,27 @@ class Jumper:
 
         print("\n It seems we have configured everything CMDR. I will start to jump on your command")
         input("Press Enter to start the jump (any button will do really)")
+        time.sleep(15)
         self.jump()
 
     def jump(self):
         with open(self.file, "r") as file:
             csv1 = csv.DictReader(file)
             for dictionary in csv1:
-                if dictionary["Fuel Used"] == 0:  # First jump and thus is wrong since we are already in system
+                print(dictionary["Fuel Used"])
+                if dictionary["Fuel Used"] == "0":  # First jump and thus is wrong since we are already in system
+                    print ("skipping first system")
                     pass
                 else:
                     one_jump(dictionary["System Name"])
-                    if self.refuel_bol:
-                        refuel(dictionary["Fuel Used"], self.tritium_place)
                     print("jumping Process for {} was a success waiting for coolDown".format(dictionary["System Name"]))
-
-            for i in range(20):
-                print("{} minutes waited".format(i))
-                time.sleep(60)
+                    # need to wait for the jump otherwise there might not be enough space in tritium depot
+                    for i in range(20):
+                        print("{} minutes waited".format(i))
+                        time.sleep(60)
+                    #refuel
+                    if self.refuel_bol:
+                        refuel(int(dictionary["Fuel Used"]), self.tritium_place)
 
 
 Jumper = Jumper()
