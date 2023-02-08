@@ -77,6 +77,29 @@ def refuel(amount: int, tritium_placement: int) -> None:
     output -> terminal text and keyboard strokes
     desc -> uses keyboard inputs to simulate taking
     '''
+    
+    # got to carrier managment
+    print("going to carrier management")
+    pydirectinput.press("space")
+    time.sleep(5) 
+    # going to tritium depot and selecting
+    print("going to tritium depot and selecting")
+    pydirectinput.press("s")
+    pydirectinput.press("s")
+    pydirectinput.press("space")
+    pydirectinput.press("space")
+    pydirectinput.press("w")
+    # dropping off tritium used in depot
+    print("dropping off tritium in tritium depot")
+    # max amount of tritium is already preselected
+    pydirectinput.press("space")
+    # full backout
+    print("fully backing out")
+    pydirectinput.press("backspace")
+    pydirectinput.press("backspace")
+    pydirectinput.press("backspace")
+    time.sleep(2)
+    
     # go into right panelw
     pydirectinput.press("4")
     time.sleep(1)
