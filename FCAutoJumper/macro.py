@@ -110,9 +110,9 @@ def refuel(amount: int, tritium_placement: int) -> None:
 
     print("transferring tritium used by last jump")
     print("transfering: " + str(amount))
-    for k in range(amount):        
-        time.sleep(0.025)
-        pydirectinput.press("a")
+    pydirectinput.keyDown('a')
+    time.sleep(10)
+    pydirectinput.keyUp('a')
     # accept transfer
     print("accepting transfer")
 
@@ -134,11 +134,9 @@ def refuel(amount: int, tritium_placement: int) -> None:
 
     print("resseting FC panel for future jumps")
     time.sleep(2)
-    pydirectinput.press("d")
-    time.sleep(0.025)
     pydirectinput.press("s")
     time.sleep(0.025)
-    pydirectinput.press("a")
+    pydirectinput.press("d")
     time.sleep(1)
 
     # backout
